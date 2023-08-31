@@ -13,8 +13,9 @@ class GameSeeder extends Seeder
      */
     public function run(): void
     {
+        // One game without tags
         Game::factory()
-            ->count(25)
+            ->count(1)
             ->create();
     }
 }
