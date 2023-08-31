@@ -1,9 +1,8 @@
-<div>
-    <h2>Game title</h2>
-    <p>Description</p>
-</div>
+<h1>Games</h1>
 
-<div>
-    <h2>Game title</h2>
-    <p>Description</p>
-</div>
+@foreach($games as $game)
+    <div>
+        <h2>{{ $game->name }}</h2>
+        <p>{{ $game->description }}</p>
+    </div>
+@endforeach
